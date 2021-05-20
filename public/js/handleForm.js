@@ -1,0 +1,10 @@
+$(document).ready(()=>{
+  $("#searchForm").submit(e=>{
+    //alert("submit")
+    e.preventDefault();
+    console.log($("#movieSearch").val())
+  })
+  $("#movieSearch").on('input',e=>{
+    console.log(e.target.value)
+  })
+})

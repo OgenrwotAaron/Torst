@@ -1,0 +1,22 @@
+<div class="container" style="margin-top: 5em;">
+  <div class="row">
+    {{#each movies}}
+    <div class="col-sm-3">
+      <a href="/movie?id={{this.id}}" class="card mb-3" id="card-link">
+        <img class="card-img-top" src="{{this.large_cover_image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title h6">{{this.title}}</h5>
+          <p class="card-text">
+            {{#each this.genres}}
+            <small class="text-muted">{{this}}, </small>
+            {{/each}}
+          </p>
+          <p class="card-text my-0 py-0">
+            <small class="text-muted border p-1 rounded">{{this.year}}</small>
+          </p>
+        </div>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>

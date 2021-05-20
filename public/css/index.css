@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+.scrolled {
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+#card-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.movie-jumbotron {
+  background-size: cover;
+  height: 80vh;
+  padding: 0 !important;
+}
+
+.overlay {
+  background: linear-gradient(0deg, black, #0600002e);
+  height: 100%;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: flex-end;
+}
